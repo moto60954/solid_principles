@@ -13,6 +13,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+
         //  1. Create instances of the individual responsibility classes
         OrderValidator validator = new OrderValidator(); //  Responsibility: Validate order details
         OrderRepository repository = new OrderRepository(); //  Responsibility: Manage order storage
@@ -24,10 +25,10 @@ public class Main {
 
         //  3. Create an Order object with some sample data
         List<OrderItem> items = new ArrayList<>();
-        items.add(new OrderItem("PROD001", 2, 25.00));
-        items.add(new OrderItem("PROD002", 1, 50.00));
+        items.add(new OrderItem("PRODUCT001", 2, 25.00));
+        items.add(new OrderItem("PRODUCT002", 1, 50.00));
 
-        Order newOrder = new Order("ORD-12345", items, "customer@example.com");
+        Order newOrder = new Order("ORDER-12345", items, "customer@example.com");
 
         //  4. Process the order using the OrderProcessorSRP
         System.out.println("--- Attempting to process a valid order ---");

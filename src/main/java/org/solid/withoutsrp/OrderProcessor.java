@@ -1,5 +1,4 @@
 package org.solid.withoutsrp;
-
 import org.solid.model.Order;
 import org.solid.model.OrderItem;
 
