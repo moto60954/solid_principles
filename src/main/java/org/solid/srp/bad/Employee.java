@@ -1,4 +1,4 @@
-package org.solid.withoutsrp;
+package org.solid.srp.bad;
 
 class Employee {
     private String name;
