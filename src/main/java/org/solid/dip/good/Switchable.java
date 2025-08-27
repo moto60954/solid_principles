@@ -58,6 +58,9 @@ class Test {
 }
 
 /*
+
+High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.
+
 Changes Made:
 1. Introduced the `Switchable` interface: This interface defines a contract for any device that can be switched on, promoting abstraction.
 2. Modified `LightBulb` to implement `Switchable`: This allows `LightBulb` to be treated as a `Switchable` device.
